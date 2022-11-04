@@ -1,14 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/biru"
     tools:context=".beranda_activity">
 
-    <Button
-        android:id="@+id/button"
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_height="416dp"
+        android:layout_gravity="top"
+        app:srcCompat="@drawable/bg_gedung" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="434dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/shape_rounded"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button"
+            style="@style/ButtonRoundedGrey"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_gravity="top"
+            android:background="@drawable/rounded_button_white"
+            app:icon="@drawable/icon_kegiatan"
+            app:iconGravity="top"
+            app:iconSize="100px"
+            app:iconTint="@color/biru" />
+    </LinearLayout>
+</FrameLayout>
