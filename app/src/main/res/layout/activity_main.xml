@@ -122,8 +122,11 @@
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_marginTop="30px"
-            android:text="Sign in with Google"
-            />
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/google"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:shadowColor="#0E0B0B"
+            android:text="Sign in with Google" />
 
     </LinearLayout>
 

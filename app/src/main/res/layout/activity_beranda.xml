@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,38 +8,17 @@
     android:background="@color/biru"
     tools:context=".beranda_activity">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="416dp"
-        android:layout_gravity="top"
-        app:srcCompat="@drawable/bg_gedung" />
-
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="top"
-        android:orientation="vertical">
-
-    </LinearLayout>
-
-    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_above="@id/bottom_navigation"
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
-        android:layout_height="434dp"
-        android:layout_gravity="bottom|center_horizontal"
-        android:background="@drawable/shape_rounded"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/button"
-            style="@style/ButtonRoundedGrey"
-            android:layout_width="200px"
-            android:layout_height="200px"
-            android:layout_gravity="top"
-            android:background="@drawable/rounded_button_white"
-            app:icon="@drawable/icon_kegiatan"
-            app:iconGravity="top"
-            app:iconSize="100px"
-            app:iconTint="@color/biru" />
-    </LinearLayout>
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:menu="@menu/bottom_navigation"/>
+</RelativeLayout>
