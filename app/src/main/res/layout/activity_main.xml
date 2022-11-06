@@ -78,6 +78,7 @@
             android:ems="10"
             android:hint="  Username"
             android:inputType="textPassword"
+            android:paddingLeft="10dp"
             android:scrollbarSize="15dp"
             android:textAlignment="inherit"
             android:textAllCaps="true" />
@@ -92,6 +93,7 @@
             android:ems="10"
             android:hint="  Password"
             android:inputType="textPassword"
+            android:paddingLeft="10dp"
             android:textAlignment="inherit" />
 
         <Button
@@ -122,10 +124,17 @@
             android:layout_height="40dp"
             android:layout_gravity="center"
             android:layout_marginTop="30px"
+            android:background="@drawable/rounded_button"
             android:backgroundTint="@color/white"
-            android:drawableLeft="@drawable/google"
-            android:scrollbarAlwaysDrawHorizontalTrack="false"
-            android:shadowColor="#0E0B0B"
+            android:drawableLeft="@drawable/google_small"
+            android:drawingCacheQuality="auto"
+            android:duplicateParentState="false"
+            android:elevation="10dp"
+            android:includeFontPadding="false"
+            android:paddingLeft="20dp"
+            android:shadowColor="#FF0000"
+            android:shadowDx="100"
+            android:shadowDy="10"
             android:text="Sign in with Google" />
 
     </LinearLayout>
